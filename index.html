@@ -1,4 +1,20 @@
-<form action="scrape" method="GET">
-  <input type="url" name="url" placeholder="Enter URL">
-  <button type="submit">Scrape</button>
-</form>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Web Scraping Lab</title>
+</head>
+<body>
+  <h2>Web Scraping Tool</h2>
+  <form action="scrape" method="post">
+    <label>Enter URL:</label><br>
+    <input type="text" name="url" value="https://bbc.com" required><br><br>
+
+    <label>Select data to scrape:</label><br>
+    <input type="checkbox" name="option" value="title" checked> Title<br>
+    <input type="checkbox" name="option" value="links"> Links<br>
+    <input type="checkbox" name="option" value="images"> Images<br><br>
+
+    <input type="submit" value="Scrape">
+  </form>
+</body>
+</html>
